@@ -1,0 +1,61 @@
+git config --global user.name "Tvoje Ime"
+git config --global user.email "tvoj@email.com"
+
+git add .
+git commit -m "commit message"
+git push origin main
+git clone repository_name
+git pull origin main
+git log
+
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+uv --version
+uv python list
+uv python install cpython-3.14.3-windows-x86_64-none
+
+uv venv
+.venv\Scripts\activate
+deactivate
+
+uv pip install ruff
+uv run ruff format .
+
+====================
+
+uv pip freeze > requirements.txt
+uv pip install -r requirements.txt
+
+====================
+
+postgres [mitar]
+
+psql
+
+psql -U postgres -h localhost [mitar]
+
+\l
+\q
+
+==================== linux
+
+wsl --install
+
+wsl.exe --install Ubuntu-24.04
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+( ls -a, cd, cd ./something, clear, pwd, cat, nano [ctrl + o, ctrl + x] )
+
+==================== redis
+
+curl -fsSL https://packages.redis.io/gpg | sudo gpg --dearmor -o /usr/share/keyrings/redis-archive-keyring.gpg
+
+echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://packages.redis.io/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/redis.list
+
+==================== react
+
+winget install OpenJS.NodeJS
+
+====================

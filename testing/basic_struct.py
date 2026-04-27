@@ -62,3 +62,11 @@ for k, v in d1.items():
     d1[k] += 100
 
 print(d1)
+
+lista = [1, 2, 3, 4, 5, 6, 1020]
+
+lista_parnih = [value for value in lista if value % 2 == 0]
+lista_neparnih = [value for value in lista if value % 2 != 0]
+
+print(lista_parnih)
+print(lista_neparnih)
